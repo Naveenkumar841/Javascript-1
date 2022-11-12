@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM</title>
+</head>
+<body>
+    
+
+    <script>
+        //ATM
+        let amount =prompt("Enter Amount");
+
+        //Five Thousand
+        let fivet = amount/5000;
+        let fivremn =amount%5000;
+       //One Thousand
+        let one = fivremn/1000;
+        let oneremn= fivremn%1000;
+       //Five Hundered
+        let fivehund= oneremn/500;
+        let fhunder = oneremn%500
+       //One Hundred
+        let Hundred = fhunder/100;
+        let hundremn = fhunder%100;
+       //Fifty Rupees
+        let fifty = hundremn/50;
+        let fiftyrem = hundremn%50
+       //Twenty Rupees
+        let twenty  = fiftyrem/20;
+        let twentyrem = fiftyrem%20;
+       //ten Rupees
+        let ten =       twentyrem/10;
+        let tenremn =   twentyrem%10;
+       //One Rupees
+        let rupees=     tenremn/1;
+        let rupeerem=   tenremn%1;
+       
+        alert("(Five Thousand Notes are) = "+parseInt(fivet)   +"\n"+"(One Thousand Notes are = "+ parseInt(one)    +"\n"+ "(Five Hundred Notes are = "+parseInt(fivehund)    +"\n"+"(One Hundred Notes are = "+ parseInt(Hundred)    + "\n"+"(Fity Rupees Notes are) = "+ parseInt(fifty)    + "\n"+"(Twenty Rupees Notes are) = "+ parseInt(twenty)    +"\n"+ "(Ten Rupees Notes are) = " +parseInt(ten)    + "\n" + " (One Rupees Notes are) = " + parseInt(rupees)   );
+
+      
+      /*  let one = amount%1000;
+        let hund= amount%100;
+        let fif = amount%50;
+        let ten = amount%10;
+        let fiver= amount%5;
+        let rup =   amount%1;
+        */
+/*
+        alert("Five Thousand "+fivet + "\n" +"One Thousand "+ one +"\n" +"Hundred "+ hund +"\n" +"Fifty "+ fif +"\n"  +"Ten "+ten +"\n" + +"Five" +fiver +"\n" +"One Rupee "+ rup +"\n");
+*/
+    </script>
+</body>
+</html>
